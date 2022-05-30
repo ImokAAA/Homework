@@ -1,0 +1,5 @@
+file1 = open("/home/imangali/python_found_epam/Homework/data/unsorted_names.txt")
+file_content = file1.readlines()
+file1.close()
+file2 = open("/home/imangali/python_found_epam/Homework/data/sorted_names.txt", 'w')
+file2.writelines(sorted(file_content))
